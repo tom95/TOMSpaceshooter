@@ -36,6 +36,7 @@ const char *FRAGMENT_SHADER =
 		"} else {"
 			"gl_FragColor = color;"
 		"}"
+		// "gl_FragColor.rgba = gl_FragColor.bgra;"
 	"}";
 
 static void checkErrors(const char *extraMessage) {
