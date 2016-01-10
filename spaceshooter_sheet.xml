@@ -48,26 +48,26 @@
 	<SubTexture name="Parts/cockpitYellow_6.png" x="734" y="921" width="42" height="56"/>
 	<SubTexture name="Parts/cockpitYellow_7.png" x="600" y="375" width="51" height="75"/>
 	<SubTexture name="UI/cursor.png" x="797" y="173" width="30" height="33"/>
-	<SubTexture name="Enemies/enemyBlack1.png" x="423" y="728" width="93" height="84"/>
-	<SubTexture name="Enemies/enemyBlack2.png" x="120" y="604" width="104" height="84"/>
-	<SubTexture name="Enemies/enemyBlack3.png" x="144" y="156" width="103" height="84"/>
-	<SubTexture name="Enemies/enemyBlack4.png" x="518" y="325" width="82" height="84"/>
-	<SubTexture name="Enemies/enemyBlack5.png" x="346" y="150" width="97" height="84"/>
-	<SubTexture name="Enemies/enemyBlue1.png" x="425" y="468" width="93" height="84"/>
-	<SubTexture name="Enemies/enemyBlue2.png" x="143" y="293" width="104" height="84"/>
-	<SubTexture name="Enemies/enemyBlue3.png" x="222" y="0" width="103" height="84"/>
-	<SubTexture name="Enemies/enemyBlue4.png" x="518" y="409" width="82" height="84"/>
-	<SubTexture name="Enemies/enemyBlue5.png" x="421" y="814" width="97" height="84"/>
-	<SubTexture name="Enemies/enemyGreen1.png" x="425" y="552" width="93" height="84"/>
-	<SubTexture name="Enemies/enemyGreen2.png" x="133" y="412" width="104" height="84"/>
-	<SubTexture name="Enemies/enemyGreen3.png" x="224" y="496" width="103" height="84"/>
-	<SubTexture name="Enemies/enemyGreen4.png" x="518" y="493" width="82" height="84"/>
-	<SubTexture name="Enemies/enemyGreen5.png" x="408" y="907" width="97" height="84"/>
-	<SubTexture name="Enemies/enemyRed1.png" x="425" y="384" width="93" height="84"/>
-	<SubTexture name="Enemies/enemyRed2.png" x="120" y="520" width="104" height="84"/>
-	<SubTexture name="Enemies/enemyRed3.png" x="224" y="580" width="103" height="84"/>
-	<SubTexture name="Enemies/enemyRed4.png" x="520" y="577" width="82" height="84"/>
-	<SubTexture name="Enemies/enemyRed5.png" x="423" y="644" width="97" height="84"/>
+	<SubTexture name="Spaceships/beetle_black.png" x="423" y="728" width="93" height="84"/>
+	<SubTexture name="Spaceships/mantis_black.png" x="120" y="604" width="104" height="84"/>
+	<SubTexture name="Spaceships/moth_black.png" x="144" y="156" width="103" height="84"/>
+	<SubTexture name="Spaceships/roach_balck.png" x="518" y="325" width="82" height="84"/>
+	<SubTexture name="Spaceships/hornet_black.png" x="346" y="150" width="97" height="84"/>
+	<SubTexture name="Spaceships/beetle_blue.png" x="425" y="468" width="93" height="84"/>
+	<SubTexture name="Spaceships/mantis_blue.png" x="143" y="293" width="104" height="84"/>
+	<SubTexture name="Spaceships/moth_blue.png" x="222" y="0" width="103" height="84"/>
+	<SubTexture name="Spaceships/roach_blue.png" x="518" y="409" width="82" height="84"/>
+	<SubTexture name="Spaceships/hornet_blue.png" x="421" y="814" width="97" height="84"/>
+	<SubTexture name="Spaceships/beetle_green.png" x="425" y="552" width="93" height="84"/>
+	<SubTexture name="Spaceships/mantis_green.png" x="133" y="412" width="104" height="84"/>
+	<SubTexture name="Spaceships/moth_green.png" x="224" y="496" width="103" height="84"/>
+	<SubTexture name="Spaceships/roach_green.png" x="518" y="493" width="82" height="84"/>
+	<SubTexture name="Spaceships/hornet_green.png" x="408" y="907" width="97" height="84"/>
+	<SubTexture name="Spaceships/beetle_orange.png" x="425" y="384" width="93" height="84"/>
+	<SubTexture name="Spaceships/mantis_orange.png" x="120" y="520" width="104" height="84"/>
+	<SubTexture name="Spaceships/moth_orange.png" x="224" y="580" width="103" height="84"/>
+	<SubTexture name="Spaceships/roach_orange.png" x="520" y="577" width="82" height="84"/>
+	<SubTexture name="Spaceships/hornet_orange.png" x="423" y="644" width="97" height="84"/>
 	<SubTexture name="Parts/engine1.png" x="224" y="907" width="38" height="23"/>
 	<SubTexture name="Parts/engine2.png" x="163" y="688" width="42" height="28"/>
 	<SubTexture name="Parts/engine3.png" x="644" y="1002" width="27" height="22"/>
@@ -199,27 +199,18 @@
 	<SubTexture name="UI/playerLife3_green.png" x="778" y="469" width="32" height="26"/>
 	<SubTexture name="UI/playerLife3_orange.png" x="777" y="712" width="32" height="26"/>
 	<SubTexture name="UI/playerLife3_red.png" x="777" y="443" width="32" height="26"/>
-	<SubTexture name="UI/playerShip1_blue.png" x="211" y="941" width="99" height="75"/>
-	<SubTexture name="Damage/playerShip1_damage1.png" x="112" y="941" width="99" height="75"/>
-	<SubTexture name="Damage/playerShip1_damage2.png" x="247" y="234" width="99" height="75"/>
-	<SubTexture name="Damage/playerShip1_damage3.png" x="247" y="159" width="99" height="75"/>
-	<SubTexture name="Damage/playerShip1_green.png" x="237" y="377" width="99" height="75"/>
-	<SubTexture name="Damage/playerShip1_orange.png" x="247" y="84" width="99" height="75"/>
-	<SubTexture name="Damage/playerShip1_red.png" x="224" y="832" width="99" height="75"/>
-	<SubTexture name="Damage/playerShip2_blue.png" x="112" y="791" width="112" height="75"/>
-	<SubTexture name="Damage/playerShip2_damage1.png" x="0" y="866" width="112" height="75"/>
-	<SubTexture name="Damage/playerShip2_damage2.png" x="0" y="791" width="112" height="75"/>
-	<SubTexture name="Damage/playerShip2_damage3.png" x="0" y="716" width="112" height="75"/>
-	<SubTexture name="playerShip2_green.png" x="112" y="866" width="112" height="75"/>
-	<SubTexture name="playerShip2_orange.png" x="112" y="716" width="112" height="75"/>
-	<SubTexture name="playerShip2_red.png" x="0" y="941" width="112" height="75"/>
-	<SubTexture name="playerShip3_blue.png" x="325" y="739" width="98" height="75"/>
-	<SubTexture name="playerShip3_damage1.png" x="323" y="832" width="98" height="75"/>
-	<SubTexture name="playerShip3_damage2.png" x="310" y="907" width="98" height="75"/>
-	<SubTexture name="playerShip3_damage3.png" x="325" y="664" width="98" height="75"/>
-	<SubTexture name="playerShip3_green.png" x="346" y="75" width="98" height="75"/>
-	<SubTexture name="playerShip3_orange.png" x="336" y="309" width="98" height="75"/>
-	<SubTexture name="playerShip3_red.png" x="325" y="0" width="98" height="75"/>
+	<SubTexture name="Spaceships/albatross_blue.png" x="211" y="941" width="99" height="75"/>
+	<SubTexture name="Spaceships/albatross_green.png" x="237" y="377" width="99" height="75"/>
+	<SubTexture name="Spaceships/albatross_orange.png" x="247" y="84" width="99" height="75"/>
+	<SubTexture name="Spaceships/albatross_red.png" x="224" y="832" width="99" height="75"/>
+	<SubTexture name="Spaceships/eagle_blue.png" x="112" y="791" width="112" height="75"/>
+	<SubTexture name="Spaceships/eagle_green.png" x="112" y="866" width="112" height="75"/>
+	<SubTexture name="Spaceships/eagle_orange.png" x="112" y="716" width="112" height="75"/>
+	<SubTexture name="Spaceships/eagle_red.png" x="0" y="941" width="112" height="75"/>
+	<SubTexture name="Spaceships/swallow_blue.png" x="325" y="739" width="98" height="75"/>
+	<SubTexture name="Spaceships/swallow_green.png" x="346" y="75" width="98" height="75"/>
+	<SubTexture name="Spaceships/swallow_orange.png" x="336" y="309" width="98" height="75"/>
+	<SubTexture name="Spaceships/swallow_red.png" x="325" y="0" width="98" height="75"/>
 	<SubTexture name="Power-ups/powerupBlue.png" x="696" y="329" width="34" height="33"/>
 	<SubTexture name="Power-ups/powerupBlue_bolt.png" x="539" y="989" width="34" height="33"/>
 	<SubTexture name="Power-ups/powerupBlue_shield.png" x="777" y="679" width="34" height="33"/>
@@ -257,10 +248,10 @@
 	<SubTexture name="Power-ups/things_silver.png" x="777" y="353" width="32" height="32"/>
 	<SubTexture name="Parts/turretBase_big.png" x="310" y="982" width="41" height="41"/>
 	<SubTexture name="Parts/turretBase_small.png" x="808" y="301" width="26" height="26"/>
-	<SubTexture name="ufoBlue.png" x="444" y="91" width="91" height="91"/>
-	<SubTexture name="ufoGreen.png" x="434" y="234" width="91" height="91"/>
-	<SubTexture name="ufoRed.png" x="444" y="0" width="91" height="91"/>
-	<SubTexture name="ufoYellow.png" x="505" y="898" width="91" height="91"/>
+	<SubTexture name="Spaceships/ufo_blue.png" x="444" y="91" width="91" height="91"/>
+	<SubTexture name="Spaceships/ufo_green.png" x="434" y="234" width="91" height="91"/>
+	<SubTexture name="Spaceships/ufo_red.png" x="444" y="0" width="91" height="91"/>
+	<SubTexture name="Spaceships/ufo_yellow.png" x="505" y="898" width="91" height="91"/>
 	<SubTexture name="Parts/wingBlue_0.png" x="647" y="924" width="45" height="78"/>
 	<SubTexture name="Parts/wingBlue_1.png" x="738" y="253" width="37" height="72"/>
 	<SubTexture name="Parts/wingBlue_2.png" x="805" y="0" width="26" height="84"/>
