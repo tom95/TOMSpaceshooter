@@ -187,18 +187,18 @@
 	<SubTexture name="Power-ups/pill_green.png" x="573" y="989" width="22" height="21"/>
 	<SubTexture name="Power-ups/pill_red.png" x="222" y="108" width="22" height="21"/>
 	<SubTexture name="Power-ups/pill_yellow.png" x="222" y="129" width="22" height="21"/>
-	<SubTexture name="UI/playerLife1_blue.png" x="482" y="358" width="33" height="26"/>
-	<SubTexture name="UI/playerLife1_green.png" x="535" y="150" width="33" height="26"/>
-	<SubTexture name="UI/playerLife1_orange.png" x="777" y="327" width="33" height="26"/>
-	<SubTexture name="UI/playerLife1_red.png" x="775" y="301" width="33" height="26"/>
-	<SubTexture name="UI/playerLife2_blue.png" x="465" y="991" width="37" height="26"/>
-	<SubTexture name="UI/playerLife2_green.png" x="391" y="991" width="37" height="26"/>
-	<SubTexture name="UI/playerLife2_orange.png" x="428" y="991" width="37" height="26"/>
-	<SubTexture name="UI/playerLife2_red.png" x="502" y="991" width="37" height="26"/>
-	<SubTexture name="UI/playerLife3_blue.png" x="777" y="385" width="32" height="26"/>
-	<SubTexture name="UI/playerLife3_green.png" x="778" y="469" width="32" height="26"/>
-	<SubTexture name="UI/playerLife3_orange.png" x="777" y="712" width="32" height="26"/>
-	<SubTexture name="UI/playerLife3_red.png" x="777" y="443" width="32" height="26"/>
+	<SubTexture name="UI/albatrossLife_blue.png" x="482" y="358" width="33" height="26"/>
+	<SubTexture name="UI/albatrossLife_green.png" x="535" y="150" width="33" height="26"/>
+	<SubTexture name="UI/albatrossLife_orange.png" x="777" y="327" width="33" height="26"/>
+	<SubTexture name="UI/albatrossLife_red.png" x="775" y="301" width="33" height="26"/>
+	<SubTexture name="UI/eagleLife_blue.png" x="465" y="991" width="37" height="26"/>
+	<SubTexture name="UI/eagleLife_green.png" x="391" y="991" width="37" height="26"/>
+	<SubTexture name="UI/eagleLife_orange.png" x="428" y="991" width="37" height="26"/>
+	<SubTexture name="UI/eagleLife_red.png" x="502" y="991" width="37" height="26"/>
+	<SubTexture name="UI/swallowLife_blue.png" x="777" y="385" width="32" height="26"/>
+	<SubTexture name="UI/swallowLife_green.png" x="778" y="469" width="32" height="26"/>
+	<SubTexture name="UI/swallowLife_orange.png" x="777" y="712" width="32" height="26"/>
+	<SubTexture name="UI/swallowLife_red.png" x="777" y="443" width="32" height="26"/>
 	<SubTexture name="Spaceships/albatross_blue.png" x="211" y="941" width="99" height="75"/>
 	<SubTexture name="Spaceships/albatross_green.png" x="237" y="377" width="99" height="75"/>
 	<SubTexture name="Spaceships/albatross_orange.png" x="247" y="84" width="99" height="75"/>
