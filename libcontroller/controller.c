@@ -169,7 +169,7 @@ void free_controller(struct controller *controller)
 
 	close(controller->fd);
 
-	free(controller->hats);
+	// free(controller->hats);
 	free(controller->name);
 	free(controller->path);
 	free(controller);
@@ -335,9 +335,9 @@ void report_event(struct controller *controller, enum event_type event, int whic
 			// printf("hat event %i\n", arg);
 			break;
 		case BUTTON:
-			// printf("%s %i\n", input_name_to_state_index[controller->button_mappings[which]], arg);
+			// printf("%s (%i) %i\n", input_name_to_state_index[controller->button_mappings[which]], controller->button_mappings[which], arg);
 			controller->state.state_data[controller->button_mappings[which]] = arg;
-			buffer_button_event(get_controller_index(controller), which, arg);
+			buffer_button_event(get_controller_index(controller), controller->button_mappings[which], arg);
 			break;
 		case AXIS:
 			// printf("%s %i\n", input_name_to_state_index[controller->axis_mappings[which]], arg);
@@ -368,7 +368,6 @@ void handle_hat(struct controller *controller, uint8_t hat, int axis, int value)
 		report_event(controller, HAT, hat, position_map[the_hat->axis[1]][the_hat->axis[0]]);
 	}
 }
-
 
 int axis_correct(struct controller* controller, int which, int value)
 {
@@ -652,6 +651,7 @@ void open_joystick(const char *path)
 	}
 
 	controllers[slot] = controller;
+	printf("Controller `%s` added\n", controller->name);
 
 	config_joystick(controller);
 }
@@ -662,6 +662,7 @@ void close_joystick(const char *path)
 
 	for (i = 0; i < MAX_CONTROLLERS; i++) {
 		if (controllers[i] && strcmp(controllers[i]->path, path) == 0) {
+			printf("Controller `%s` removed\n", controllers[i]->name);
 			free_controller(controllers[i]);
 			controllers[i] = NULL;
 			return;
@@ -679,6 +680,7 @@ void device_event(enum device_event_type event, struct udev_device *dev)
 		return;
 	}
 
+	printf("Generic device remove at: %s\n", path);
 	// check if we have a joystick
 	value = udev_device_get_property_value(dev, "ID_INPUT_JOYSTICK");
 	if (value == NULL || strcmp(value, "1") != 0) {
@@ -818,20 +820,29 @@ struct controller_state controllerState(int index)
 uint16_t controllerNextEvent()
 {
 	uint16_t event_packed = 0;
+	struct button_event *event;
 
-	if (!button_event_buffer_head)
+	event = button_event_buffer_head;
+
+	if (!event)
 		return event_packed;
 
-	// 11 bits : button_index
+	// 1 bit   : valid
+	// 10 bits : button_index
 	// 4 bits  : controller_index
 	// 1 bit   : active
 
-	event_packed |= button_event_buffer_head->button << 5;
-	event_packed |= button_event_buffer_head->controller_index << 1;
-	event_packed |= button_event_buffer_head->active;
+	event_packed |= 1 << 15;
+	event_packed |= event->button << 5;
+	event_packed |= event->controller_index << 1;
+	event_packed |= event->active;
+	// printf("Queing button %i on %i as %i --> %u\n", event->button, event->controller_index, event->active, event_packed);
 
-	button_event_buffer_head = button_event_buffer_head->next;
-	free(button_event_buffer_head);
+	if (event == button_event_buffer_tail)
+		button_event_buffer_tail = NULL;
+
+	button_event_buffer_head = event->next;
+	free(event);
 
 	return event_packed;
 }

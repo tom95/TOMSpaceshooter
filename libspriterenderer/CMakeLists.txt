@@ -1,7 +1,6 @@
 add_definitions(-fPIC)
-add_library(controller SHARED controller.c)
-target_link_libraries(controller udev)
-set_target_properties(controller
+add_library(spriteRenderer SHARED spriteRenderer.c)
+set_target_properties(spriteRenderer
 	PROPERTIES
 	COMPILE_FLAGS "-m32"
 	LINK_FLAGS "-m32"
