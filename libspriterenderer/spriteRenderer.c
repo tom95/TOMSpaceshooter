@@ -180,6 +180,18 @@ void beginBatch(float *viewProjectionTransform, GLboolean centeredGeometry) {
 	glUniformMatrix4fv(viewProjectionTransformUniform, 1, GL_TRUE, viewProjectionTransform);
 }
 
+struct __attribute__ ((packed)) rectangle_render_info {
+	float modelTransform[16];
+	float scaleX;
+	float scaleY;
+	float red;
+	float green;
+	float blue;
+	float alpha;
+	float texcoordsOffset[4];
+	int useTexture;
+};
+
 void renderSprite(float *modelTransform, float scaleX, float scaleY, float r, float g, float b, float alpha, float *texcoordsOffset, GLboolean useTexture) {
 	float scale[2] = { scaleX, scaleY };
 	float color[4] = { r, g, b, alpha };
@@ -193,6 +205,22 @@ void renderSprite(float *modelTransform, float scaleX, float scaleY, float r, fl
 	glUniform1iv(useTextureUniform, 1, &useTexture);
 
 	glDrawArrays(GL_TRIANGLES, 0, 6);
+}
+
+void renderManySprites(struct rectangle_render_info *infos, int num)
+{
+	int i;
+	for (i = 0; i < num; i++) {
+		renderSprite(infos[i].modelTransform,
+				infos[i].scaleX,
+				infos[i].scaleY,
+				infos[i].red,
+				infos[i].green,
+				infos[i].blue,
+				infos[i].alpha,
+				infos[i].texcoordsOffset,
+				infos[i].useTexture);
+	}
 }
 
 void endBatch() {
