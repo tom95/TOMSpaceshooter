@@ -1,1 +1,4 @@
 build
+libfmod/fmodstudioapi10706linux
+libfmod/fmod-reverb
+*.pyc

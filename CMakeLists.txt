@@ -3,3 +3,4 @@ project(external-extras)
 
 add_subdirectory(libspriterenderer)
 add_subdirectory(libcontroller)
+#add_subdirectory(libfmod)
