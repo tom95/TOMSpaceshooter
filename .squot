@@ -1,0 +1,4 @@
+OrderedDictionary {
+	'src/TOMGameEngine' : #SquotTonelSerializer,
+	'src/TOMSpaceShooter' : #SquotTonelSerializer
+}
