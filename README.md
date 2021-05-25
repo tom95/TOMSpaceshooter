@@ -2,6 +2,8 @@
 
 A rogue-like spaceshooter of a spaceship on an obsolete mission.
 
+![The game](https://raw.githubusercontent.com/tom95/TOMSpaceshooter/master/assets/screenshot.png)
+
 ## Installation
 
 > Note: sadly requires opensmalltalk VM builds with FloatArray fixes that are not currently available to download easily.
