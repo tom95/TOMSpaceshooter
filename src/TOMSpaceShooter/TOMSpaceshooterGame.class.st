@@ -24,7 +24,13 @@ TOMSpaceshooterGame class >> aiDebug [
 
 { #category : #'feature-configuration' }
 TOMSpaceshooterGame class >> assetsBasePath [
-	^'TOMSpaceShooter'
+	^ (FileDirectory uri: 'TOMSpaceShooter') exists
+		ifTrue: ['TOMSpaceShooter']
+		ifFalse: [
+			MCRepositoryGroup default repositories
+				detect: [:repo | (repo isKindOf: MCFetchGithubRepository) and: [repo goferReferences anySatisfy: [:ref | ref name beginsWith: 'TOMSpaceShooter']]]
+				ifFound: [:repo | (repo directory containingDirectory / 'assets') fullName]
+				ifNone: [self error: 'path to assets not found']]
 ]
 
 { #category : #'feature-configuration' }
