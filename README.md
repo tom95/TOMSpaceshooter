@@ -12,3 +12,11 @@ Metacello new
   repository: 'github://tom95/TOMSpaceshooter';
   load.
 ```
+
+## Play
+
+```
+TOMGame start.
+```
+
+Hit `<tab>` to just start the game. Move the spaceship with `ijkl`, shoot with `<space>`, and cycle through equipment via `1234`.
