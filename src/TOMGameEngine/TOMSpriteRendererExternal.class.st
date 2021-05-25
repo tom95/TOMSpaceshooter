@@ -8,10 +8,7 @@ Class {
 		'projectionTransform',
 		'bufferedDrawCalls'
 	],
-	#pools : [
-		'GLExtConstants',
-		'OpenGLConstants'
-	],
+	#pools : [ ],
 	#category : #TOMGameEngine
 }
 

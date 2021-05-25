@@ -35,9 +35,7 @@ Class {
 		'soundProxy'
 	],
 	#pools : [
-		'EventSensorConstants',
-		'GLExtConstants',
-		'OpenGLConstants'
+		'EventSensorConstants'
 	],
 	#category : #TOMGameEngine
 }

@@ -8,10 +8,7 @@ Class {
 		'particlePool',
 		'numParticles'
 	],
-	#pools : [
-		'GLExtConstants',
-		'OpenGLConstants'
-	],
+	#pools : [ ],
 	#category : #TOMGameEngine
 }
 
